@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  background: #333638;
+  padding: 6rem;
+}
+
+.display-3 {
+  color: gold;
+}
+
+form {
+  width: 10rem;
+}
+
+.select {
+  width: 10rem;
+}
+
+.main {
+  border-radius: 50px;
+  background: #333638;
+  box-shadow: 20px 20px 60px #191a1b, -20px -20px 60px #4d5255;
+}
+
+.card {
+  width: 25rem;
+}

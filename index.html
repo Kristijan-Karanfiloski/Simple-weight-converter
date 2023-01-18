@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple weight converter</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container text-center p-4 main">
+      <div class="row">
+        <h1 class="display-3 text-center">Simple weight converter</h1>
+        <form>
+          <select
+            class="form-select form__input--type"
+            aria-label="Default select example"
+          >
+            <option value="kg">Kg</option>
+            <option value="lbs">Lbs</option>
+          </select>
+
+          <input
+            id="inputKg"
+            class="form__input--kilograms my-3"
+            type="number"
+            placeholder="Enter kg"
+          />
+          <input
+            id="inputLbs"
+            class="form__input--pounds mx-5 my-3"
+            type="number"
+            placeholder="Enter lbs"
+          />
+        </form>
+        <!-- OUTPUT FOR WHEN INSERTING KG -->
+        <div class="mx-5" id="outputKg">
+          <div class="card bg-primary bg-gradient mb-2">
+            <div class="card-block">
+              <h4>Lbs:</h4>
+              <div id="lbsOutputK"></div>
+            </div>
+          </div>
+          <div class="card bg-success bg-gradient mb-2">
+            <div class="card-block-md">
+              <h4>Grams:</h4>
+              <div id="grOutputK"></div>
+            </div>
+          </div>
+          <div class="card bg-danger bg-gradient mb-2">
+            <div class="card-block">
+              <h4>Ounces:</h4>
+              <div id="ozOutputK"></div>
+            </div>
+          </div>
+        </div>
+        <!-- OUTPUT FOR WHEN INSERIGN LBS     -->
+        <div class="mx-5" id="outputLbs">
+          <div class="card bg-primary bg-gradient mb-2">
+            <div class="card-block">
+              <h4>Kg:</h4>
+              <div id="kgOutputL"></div>
+            </div>
+          </div>
+          <div class="card bg-success bg-gradient mb-2">
+            <div class="card-block">
+              <h4>Grams:</h4>
+              <div id="grOutputL"></div>
+            </div>
+          </div>
+          <div class="card bg-danger bg-gradient mb-2">
+            <div class="card-block">
+              <h4>Ounces:</h4>
+              <div id="ozOutpuL"></div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+</html>
